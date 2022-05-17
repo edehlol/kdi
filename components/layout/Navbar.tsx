@@ -21,7 +21,9 @@ export default function Navbar() {
     <div className="mx-auto max-w-screen-lg p-8">
       <div className="flex items-center justify-between">
         <Image src="/logo.svg" alt="logo" width={80} height={80} />
-        <nav className="flex items-center space-x-8 text-lg">{renderNavigationLinks()}</nav>
+        <nav className="hidden lg:flex items-center space-x-8 text-lg">
+          {renderNavigationLinks()}
+        </nav>
       </div>
     </div>
   );

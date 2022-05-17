@@ -4,10 +4,6 @@ const navigationLinks = [
     path: '/',
   },
   {
-    name: 'Jaunumi',
-    path: '/news',
-  },
-  {
     name: 'Pakalpojumi & Izmaksas',
     path: '/services',
   },

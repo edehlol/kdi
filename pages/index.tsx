@@ -1,13 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-
-const CTAButton = () => {
-  return (
-    <button className="rounded bg-yellow-400 px-5 py-3 text-lg text-white shadow hover:bg-yellow-500 active:bg-yellow-600">
-      Sazinies ar mani
-    </button>
-  );
-};
+import Button from '../components/shared/Button';
 
 const Hero = () => {
   return (
@@ -15,7 +8,7 @@ const Hero = () => {
       <div className="col-span-1">
         <h1 className="mb-12 text-6xl font-extralight leading-tight">KRISTINES DIZAINA IDEJAS</h1>
         <div>
-          <CTAButton />
+          <Button href="/contact">Sazinies ar mani</Button>
         </div>
       </div>
       <div className="relative col-span-2 w-full">
@@ -78,7 +71,7 @@ const Home: NextPage = () => {
       <About />
       <Marketing />
       <div className="flex justify-center">
-        <CTAButton />
+        <Button href="/contact">Sazinies ar mani</Button>
       </div>
     </div>
   );
